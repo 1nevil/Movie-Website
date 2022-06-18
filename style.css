@@ -1,0 +1,269 @@
+* {
+  margin: 0px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 50px;
+  height: 100%;
+}
+.logo-contanier {
+  flex: 1;
+}
+.menu-contanier {
+  flex: 6;
+  /* background-color: blue; */
+}
+.profile-contanier {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  /* background-color: aqua; */
+  justify-content: end;
+}
+.logo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255, 53, 77);
+}
+.menu_list {
+  display: flex;
+  list-style: none;
+}
+.menu_item {
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.menu_item > a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.profile-img {
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  object-fit: cover;
+  align-items: center;
+}
+.profile_text_centainer {
+  display: flex;
+  margin: 0px 10px;
+}
+.profile-text {
+  margin: 10px;
+  color: white;
+}
+.fa-sort-down {
+  margin: 8px -7px;
+
+  color: white;
+}
+.toggal {
+  height: 20px;
+  width: 40px;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.toggal-button {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  border-radius: 10px;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  transition: all 1s ease-out;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.left-menu-icon {
+  display: block;
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.container {
+  margin-left: 50px;
+  /* min-height: calc(100vh - 50px); */
+  /* height: 100vh; */
+  height: 2100px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+.container-content {
+  height: 50vh;
+}
+.feater-title-image {
+  height: 100px;
+  margin: 30px;
+}
+.featured-text {
+  margin-left: 30px;
+  width: 50%;
+  color: rgb(126, 118, 118);
+}
+.featured-link {
+  margin: 20px 30px;
+  background-color: #ec3226;
+  padding: 10px;
+  height: 40px;
+  width: 90px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* .movielist-container {
+   background-color: #fff; 
+} */
+.movielist-title {
+  font-size: 1rem;
+}
+.movielist-container {
+  padding: 20px;
+  overflow: hidden;
+}
+.movie-list {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  transition: all 1s ease-in-out;
+  transform: translateX(0);
+}
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  height: 200px;
+  width: 270px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie-list-item {
+  margin-right: 40px;
+  position: relative;
+}
+.movie-list-item-title {
+  background-color: #333;
+  position: absolute;
+  font-size: 32px;
+  padding: 0px 10px;
+  font-weight: bold;
+  top: 30%;
+  left: 20px;
+  opacity: 0;
+}
+.movie-list-item-pera {
+  background-color: #333;
+  position: absolute;
+  padding: 0px 10px;
+  top: 50%;
+  left: 20px;
+  width: 230px;
+  opacity: 0;
+}
+.movie-list-item-button {
+  padding: 10px;
+  background-color: #ec3226;
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  color: white;
+  top: 80%;
+  left: 20px;
+  opacity: 0;
+}
+.movie-list-item-button:hover {
+  opacity: 10;
+}
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-pera,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.movie-list-wrapper {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.sidebar.active {
+  background-color: white;
+}
+.navbar.active {
+  background-color: white;
+  color: black;
+}
+.left-menu-icon.active {
+  color: black;
+}
+.menu_item > a.active {
+  color: black;
+}
+.container.active {
+  background-color: #fff;
+  color: black;
+}
+.arrow.active {
+  color: #ec3226;
+}
+.toggal.active {
+  background-color: #333;
+  color: gold;
+}
+.toggal-button.active {
+  background-color: #fff;
+  transform: translateX(-20px);
+}
+
+@media only screen and (max-width: 940px) {
+  .menu-contanier {
+    display: none;
+  }
+  .container {
+    height: 2600px;
+    background-color: black;
+  }
+}
